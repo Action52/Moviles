@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D9CBE20B2091418F0008F68D /* InterviewSubjectInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBE20A2091418F0008F68D /* InterviewSubjectInfoViewController.swift */; };
+		D9CBE20D209149280008F68D /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBE20C209149280008F68D /* AboutViewController.swift */; };
+		D9CBE20F20914FF80008F68D /* CleanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBE20E20914FF80008F68D /* CleanViewController.swift */; };
+		D9CBE21120915FAD0008F68D /* CleanSelectImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBE21020915FAD0008F68D /* CleanSelectImageViewController.swift */; };
+		D9CBE21320915FD00008F68D /* CleanColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBE21220915FD00008F68D /* CleanColorViewController.swift */; };
+		D9CBE21520915FE80008F68D /* CleanImproveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBE21420915FE80008F68D /* CleanImproveViewController.swift */; };
+		D9CBE217209160880008F68D /* MobiliarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBE216209160880008F68D /* MobiliarioViewController.swift */; };
+		D9CBE219209160A50008F68D /* MobiliarioImageSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBE218209160A50008F68D /* MobiliarioImageSelectionViewController.swift */; };
+		D9CBE21B209160C70008F68D /* MobiliarioColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBE21A209160C70008F68D /* MobiliarioColorViewController.swift */; };
+		D9CBE21D209161540008F68D /* MobiliarioImprovementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBE21C209161540008F68D /* MobiliarioImprovementViewController.swift */; };
+		D9DD3539208A7E3D0006C50B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD3538208A7E3D0006C50B /* AppDelegate.swift */; };
+		D9DD353B208A7E3D0006C50B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD353A208A7E3D0006C50B /* LoginViewController.swift */; };
+		D9DD353E208A7E3D0006C50B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9DD353C208A7E3D0006C50B /* Main.storyboard */; };
+		D9DD3540208A7E420006C50B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9DD353F208A7E420006C50B /* Assets.xcassets */; };
+		D9DD3543208A7E420006C50B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9DD3541208A7E420006C50B /* LaunchScreen.storyboard */; };
+		D9DD354E208A7E420006C50B /* LaboratorioUrbanoSensorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD354D208A7E420006C50B /* LaboratorioUrbanoSensorialTests.swift */; };
+		D9DD3559208A7E420006C50B /* LaboratorioUrbanoSensorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD3558208A7E420006C50B /* LaboratorioUrbanoSensorialUITests.swift */; };
+		D9DD3567208A7F950006C50B /* InterviewLengthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD3566208A7F950006C50B /* InterviewLengthController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9DD354A208A7E420006C50B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9DD352D208A7E3D0006C50B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9DD3534208A7E3D0006C50B;
+			remoteInfo = LaboratorioUrbanoSensorial;
+		};
+		D9DD3555208A7E420006C50B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9DD352D208A7E3D0006C50B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9DD3534208A7E3D0006C50B;
+			remoteInfo = LaboratorioUrbanoSensorial;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D9CBE20A2091418F0008F68D /* InterviewSubjectInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InterviewSubjectInfoViewController.swift; path = LaboratorioUrbanoSensorial/InterviewSubjectInfoViewController.swift; sourceTree = "<group>"; };
+		D9CBE20C209149280008F68D /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AboutViewController.swift; path = LaboratorioUrbanoSensorial/AboutViewController.swift; sourceTree = "<group>"; };
+		D9CBE20E20914FF80008F68D /* CleanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CleanViewController.swift; path = LaboratorioUrbanoSensorial/CleanViewController.swift; sourceTree = "<group>"; };
+		D9CBE21020915FAD0008F68D /* CleanSelectImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CleanSelectImageViewController.swift; path = LaboratorioUrbanoSensorial/CleanSelectImageViewController.swift; sourceTree = "<group>"; };
+		D9CBE21220915FD00008F68D /* CleanColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CleanColorViewController.swift; path = LaboratorioUrbanoSensorial/CleanColorViewController.swift; sourceTree = "<group>"; };
+		D9CBE21420915FE80008F68D /* CleanImproveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CleanImproveViewController.swift; path = LaboratorioUrbanoSensorial/CleanImproveViewController.swift; sourceTree = "<group>"; };
+		D9CBE216209160880008F68D /* MobiliarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MobiliarioViewController.swift; path = LaboratorioUrbanoSensorial/MobiliarioViewController.swift; sourceTree = "<group>"; };
+		D9CBE218209160A50008F68D /* MobiliarioImageSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MobiliarioImageSelectionViewController.swift; path = LaboratorioUrbanoSensorial/MobiliarioImageSelectionViewController.swift; sourceTree = "<group>"; };
+		D9CBE21A209160C70008F68D /* MobiliarioColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MobiliarioColorViewController.swift; path = LaboratorioUrbanoSensorial/MobiliarioColorViewController.swift; sourceTree = "<group>"; };
+		D9CBE21C209161540008F68D /* MobiliarioImprovementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MobiliarioImprovementViewController.swift; path = LaboratorioUrbanoSensorial/MobiliarioImprovementViewController.swift; sourceTree = "<group>"; };
+		D9DD3535208A7E3D0006C50B /* LaboratorioUrbanoSensorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaboratorioUrbanoSensorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DD3538208A7E3D0006C50B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D9DD353A208A7E3D0006C50B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D9DD353D208A7E3D0006C50B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D9DD353F208A7E420006C50B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9DD3542208A7E420006C50B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D9DD3544208A7E420006C50B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9DD3549208A7E420006C50B /* LaboratorioUrbanoSensorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaboratorioUrbanoSensorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DD354D208A7E420006C50B /* LaboratorioUrbanoSensorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaboratorioUrbanoSensorialTests.swift; sourceTree = "<group>"; };
+		D9DD354F208A7E420006C50B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9DD3554208A7E420006C50B /* LaboratorioUrbanoSensorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaboratorioUrbanoSensorialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DD3558208A7E420006C50B /* LaboratorioUrbanoSensorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaboratorioUrbanoSensorialUITests.swift; sourceTree = "<group>"; };
+		D9DD355A208A7E420006C50B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9DD3566208A7F950006C50B /* InterviewLengthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewLengthController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9DD3532208A7E3D0006C50B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9DD3546208A7E420006C50B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9DD3551208A7E420006C50B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D9DD352C208A7E3D0006C50B = {
+			isa = PBXGroup;
+			children = (
+				D9CBE20E20914FF80008F68D /* CleanViewController.swift */,
+				D9CBE21020915FAD0008F68D /* CleanSelectImageViewController.swift */,
+				D9CBE21220915FD00008F68D /* CleanColorViewController.swift */,
+				D9CBE21420915FE80008F68D /* CleanImproveViewController.swift */,
+				D9CBE216209160880008F68D /* MobiliarioViewController.swift */,
+				D9CBE218209160A50008F68D /* MobiliarioImageSelectionViewController.swift */,
+				D9CBE21A209160C70008F68D /* MobiliarioColorViewController.swift */,
+				D9CBE21C209161540008F68D /* MobiliarioImprovementViewController.swift */,
+				D9CBE20C209149280008F68D /* AboutViewController.swift */,
+				D9CBE20A2091418F0008F68D /* InterviewSubjectInfoViewController.swift */,
+				D9DD3537208A7E3D0006C50B /* LaboratorioUrbanoSensorial */,
+				D9DD354C208A7E420006C50B /* LaboratorioUrbanoSensorialTests */,
+				D9DD3557208A7E420006C50B /* LaboratorioUrbanoSensorialUITests */,
+				D9DD3536208A7E3D0006C50B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9DD3536208A7E3D0006C50B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9DD3535208A7E3D0006C50B /* LaboratorioUrbanoSensorial.app */,
+				D9DD3549208A7E420006C50B /* LaboratorioUrbanoSensorialTests.xctest */,
+				D9DD3554208A7E420006C50B /* LaboratorioUrbanoSensorialUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9DD3537208A7E3D0006C50B /* LaboratorioUrbanoSensorial */ = {
+			isa = PBXGroup;
+			children = (
+				D9DD3538208A7E3D0006C50B /* AppDelegate.swift */,
+				D9DD353A208A7E3D0006C50B /* LoginViewController.swift */,
+				D9DD353C208A7E3D0006C50B /* Main.storyboard */,
+				D9DD3566208A7F950006C50B /* InterviewLengthController.swift */,
+				D9DD353F208A7E420006C50B /* Assets.xcassets */,
+				D9DD3541208A7E420006C50B /* LaunchScreen.storyboard */,
+				D9DD3544208A7E420006C50B /* Info.plist */,
+			);
+			path = LaboratorioUrbanoSensorial;
+			sourceTree = "<group>";
+		};
+		D9DD354C208A7E420006C50B /* LaboratorioUrbanoSensorialTests */ = {
+			isa = PBXGroup;
+			children = (
+				D9DD354D208A7E420006C50B /* LaboratorioUrbanoSensorialTests.swift */,
+				D9DD354F208A7E420006C50B /* Info.plist */,
+			);
+			path = LaboratorioUrbanoSensorialTests;
+			sourceTree = "<group>";
+		};
+		D9DD3557208A7E420006C50B /* LaboratorioUrbanoSensorialUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D9DD3558208A7E420006C50B /* LaboratorioUrbanoSensorialUITests.swift */,
+				D9DD355A208A7E420006C50B /* Info.plist */,
+			);
+			path = LaboratorioUrbanoSensorialUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9DD3534208A7E3D0006C50B /* LaboratorioUrbanoSensorial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9DD355D208A7E420006C50B /* Build configuration list for PBXNativeTarget "LaboratorioUrbanoSensorial" */;
+			buildPhases = (
+				D9DD3531208A7E3D0006C50B /* Sources */,
+				D9DD3532208A7E3D0006C50B /* Frameworks */,
+				D9DD3533208A7E3D0006C50B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LaboratorioUrbanoSensorial;
+			productName = LaboratorioUrbanoSensorial;
+			productReference = D9DD3535208A7E3D0006C50B /* LaboratorioUrbanoSensorial.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D9DD3548208A7E420006C50B /* LaboratorioUrbanoSensorialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9DD3560208A7E420006C50B /* Build configuration list for PBXNativeTarget "LaboratorioUrbanoSensorialTests" */;
+			buildPhases = (
+				D9DD3545208A7E420006C50B /* Sources */,
+				D9DD3546208A7E420006C50B /* Frameworks */,
+				D9DD3547208A7E420006C50B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9DD354B208A7E420006C50B /* PBXTargetDependency */,
+			);
+			name = LaboratorioUrbanoSensorialTests;
+			productName = LaboratorioUrbanoSensorialTests;
+			productReference = D9DD3549208A7E420006C50B /* LaboratorioUrbanoSensorialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D9DD3553208A7E420006C50B /* LaboratorioUrbanoSensorialUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9DD3563208A7E420006C50B /* Build configuration list for PBXNativeTarget "LaboratorioUrbanoSensorialUITests" */;
+			buildPhases = (
+				D9DD3550208A7E420006C50B /* Sources */,
+				D9DD3551208A7E420006C50B /* Frameworks */,
+				D9DD3552208A7E420006C50B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9DD3556208A7E420006C50B /* PBXTargetDependency */,
+			);
+			name = LaboratorioUrbanoSensorialUITests;
+			productName = LaboratorioUrbanoSensorialUITests;
+			productReference = D9DD3554208A7E420006C50B /* LaboratorioUrbanoSensorialUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9DD352D208A7E3D0006C50B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Luis Alfredo León Villapún";
+				TargetAttributes = {
+					D9DD3534208A7E3D0006C50B = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					D9DD3548208A7E420006C50B = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = D9DD3534208A7E3D0006C50B;
+					};
+					D9DD3553208A7E420006C50B = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = D9DD3534208A7E3D0006C50B;
+					};
+				};
+			};
+			buildConfigurationList = D9DD3530208A7E3D0006C50B /* Build configuration list for PBXProject "LaboratorioUrbanoSensorial" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9DD352C208A7E3D0006C50B;
+			productRefGroup = D9DD3536208A7E3D0006C50B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9DD3534208A7E3D0006C50B /* LaboratorioUrbanoSensorial */,
+				D9DD3548208A7E420006C50B /* LaboratorioUrbanoSensorialTests */,
+				D9DD3553208A7E420006C50B /* LaboratorioUrbanoSensorialUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9DD3533208A7E3D0006C50B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9DD3543208A7E420006C50B /* LaunchScreen.storyboard in Resources */,
+				D9DD3540208A7E420006C50B /* Assets.xcassets in Resources */,
+				D9DD353E208A7E3D0006C50B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9DD3547208A7E420006C50B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9DD3552208A7E420006C50B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9DD3531208A7E3D0006C50B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9CBE21D209161540008F68D /* MobiliarioImprovementViewController.swift in Sources */,
+				D9DD3567208A7F950006C50B /* InterviewLengthController.swift in Sources */,
+				D9DD353B208A7E3D0006C50B /* LoginViewController.swift in Sources */,
+				D9CBE21320915FD00008F68D /* CleanColorViewController.swift in Sources */,
+				D9CBE20F20914FF80008F68D /* CleanViewController.swift in Sources */,
+				D9CBE21120915FAD0008F68D /* CleanSelectImageViewController.swift in Sources */,
+				D9DD3539208A7E3D0006C50B /* AppDelegate.swift in Sources */,
+				D9CBE20D209149280008F68D /* AboutViewController.swift in Sources */,
+				D9CBE20B2091418F0008F68D /* InterviewSubjectInfoViewController.swift in Sources */,
+				D9CBE219209160A50008F68D /* MobiliarioImageSelectionViewController.swift in Sources */,
+				D9CBE21520915FE80008F68D /* CleanImproveViewController.swift in Sources */,
+				D9CBE217209160880008F68D /* MobiliarioViewController.swift in Sources */,
+				D9CBE21B209160C70008F68D /* MobiliarioColorViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9DD3545208A7E420006C50B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9DD354E208A7E420006C50B /* LaboratorioUrbanoSensorialTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9DD3550208A7E420006C50B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9DD3559208A7E420006C50B /* LaboratorioUrbanoSensorialUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9DD354B208A7E420006C50B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9DD3534208A7E3D0006C50B /* LaboratorioUrbanoSensorial */;
+			targetProxy = D9DD354A208A7E420006C50B /* PBXContainerItemProxy */;
+		};
+		D9DD3556208A7E420006C50B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9DD3534208A7E3D0006C50B /* LaboratorioUrbanoSensorial */;
+			targetProxy = D9DD3555208A7E420006C50B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D9DD353C208A7E3D0006C50B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9DD353D208A7E3D0006C50B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D9DD3541208A7E420006C50B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9DD3542208A7E420006C50B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9DD355B208A7E420006C50B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D9DD355C208A7E420006C50B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9DD355E208A7E420006C50B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LaboratorioUrbanoSensorial/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = leonvillapun.LaboratorioUrbanoSensorial;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9DD355F208A7E420006C50B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LaboratorioUrbanoSensorial/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = leonvillapun.LaboratorioUrbanoSensorial;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D9DD3561208A7E420006C50B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LaboratorioUrbanoSensorialTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = leonvillapun.LaboratorioUrbanoSensorialTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LaboratorioUrbanoSensorial.app/LaboratorioUrbanoSensorial";
+			};
+			name = Debug;
+		};
+		D9DD3562208A7E420006C50B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LaboratorioUrbanoSensorialTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = leonvillapun.LaboratorioUrbanoSensorialTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LaboratorioUrbanoSensorial.app/LaboratorioUrbanoSensorial";
+			};
+			name = Release;
+		};
+		D9DD3564208A7E420006C50B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LaboratorioUrbanoSensorialUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = leonvillapun.LaboratorioUrbanoSensorialUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LaboratorioUrbanoSensorial;
+			};
+			name = Debug;
+		};
+		D9DD3565208A7E420006C50B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LaboratorioUrbanoSensorialUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = leonvillapun.LaboratorioUrbanoSensorialUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LaboratorioUrbanoSensorial;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9DD3530208A7E3D0006C50B /* Build configuration list for PBXProject "LaboratorioUrbanoSensorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9DD355B208A7E420006C50B /* Debug */,
+				D9DD355C208A7E420006C50B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9DD355D208A7E420006C50B /* Build configuration list for PBXNativeTarget "LaboratorioUrbanoSensorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9DD355E208A7E420006C50B /* Debug */,
+				D9DD355F208A7E420006C50B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9DD3560208A7E420006C50B /* Build configuration list for PBXNativeTarget "LaboratorioUrbanoSensorialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9DD3561208A7E420006C50B /* Debug */,
+				D9DD3562208A7E420006C50B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9DD3563208A7E420006C50B /* Build configuration list for PBXNativeTarget "LaboratorioUrbanoSensorialUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9DD3564208A7E420006C50B /* Debug */,
+				D9DD3565208A7E420006C50B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9DD352D208A7E3D0006C50B /* Project object */;
+}
