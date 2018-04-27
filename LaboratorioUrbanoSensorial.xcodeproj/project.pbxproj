@@ -17,6 +17,19 @@
 		D9CBE219209160A50008F68D /* MobiliarioImageSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBE218209160A50008F68D /* MobiliarioImageSelectionViewController.swift */; };
 		D9CBE21B209160C70008F68D /* MobiliarioColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBE21A209160C70008F68D /* MobiliarioColorViewController.swift */; };
 		D9CBE21D209161540008F68D /* MobiliarioImprovementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBE21C209161540008F68D /* MobiliarioImprovementViewController.swift */; };
+		D9CBE21F2092A74F0008F68D /* NoiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBE21E2092A74F0008F68D /* NoiseViewController.swift */; };
+		D9CBE2212092A7730008F68D /* NoiseImageSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBE2202092A7730008F68D /* NoiseImageSelectionViewController.swift */; };
+		D9CBE2232092A79C0008F68D /* NoiseColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBE2222092A79C0008F68D /* NoiseColorViewController.swift */; };
+		D9CBE2252092A7B10008F68D /* NoiseImprovementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBE2242092A7B10008F68D /* NoiseImprovementViewController.swift */; };
+		D9CBE2272092A7C80008F68D /* SecurityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBE2262092A7C80008F68D /* SecurityViewController.swift */; };
+		D9CBE2292092A7DB0008F68D /* SecurityImageSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBE2282092A7DB0008F68D /* SecurityImageSelectionViewController.swift */; };
+		D9CBE22B2092A7F40008F68D /* SecurityColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBE22A2092A7F40008F68D /* SecurityColorViewController.swift */; };
+		D9CBE22D2092AF8F0008F68D /* SecurityImprovementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBE22C2092AF8F0008F68D /* SecurityImprovementViewController.swift */; };
+		D9CBE22F2092B03A0008F68D /* NatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBE22E2092B03A0008F68D /* NatureViewController.swift */; };
+		D9CBE2312092B04D0008F68D /* NatureImageSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBE2302092B04D0008F68D /* NatureImageSelectionViewController.swift */; };
+		D9CBE2332092B0620008F68D /* NatureColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBE2322092B0620008F68D /* NatureColorViewController.swift */; };
+		D9CBE2352092B0A30008F68D /* NatureImprovementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBE2342092B0A30008F68D /* NatureImprovementViewController.swift */; };
+		D9CBE2372092B0C70008F68D /* EndInterviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBE2362092B0C70008F68D /* EndInterviewViewController.swift */; };
 		D9DD3539208A7E3D0006C50B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD3538208A7E3D0006C50B /* AppDelegate.swift */; };
 		D9DD353B208A7E3D0006C50B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD353A208A7E3D0006C50B /* LoginViewController.swift */; };
 		D9DD353E208A7E3D0006C50B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9DD353C208A7E3D0006C50B /* Main.storyboard */; };
@@ -45,16 +58,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D9CBE20A2091418F0008F68D /* InterviewSubjectInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InterviewSubjectInfoViewController.swift; path = LaboratorioUrbanoSensorial/InterviewSubjectInfoViewController.swift; sourceTree = "<group>"; };
-		D9CBE20C209149280008F68D /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AboutViewController.swift; path = LaboratorioUrbanoSensorial/AboutViewController.swift; sourceTree = "<group>"; };
-		D9CBE20E20914FF80008F68D /* CleanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CleanViewController.swift; path = LaboratorioUrbanoSensorial/CleanViewController.swift; sourceTree = "<group>"; };
-		D9CBE21020915FAD0008F68D /* CleanSelectImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CleanSelectImageViewController.swift; path = LaboratorioUrbanoSensorial/CleanSelectImageViewController.swift; sourceTree = "<group>"; };
-		D9CBE21220915FD00008F68D /* CleanColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CleanColorViewController.swift; path = LaboratorioUrbanoSensorial/CleanColorViewController.swift; sourceTree = "<group>"; };
-		D9CBE21420915FE80008F68D /* CleanImproveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CleanImproveViewController.swift; path = LaboratorioUrbanoSensorial/CleanImproveViewController.swift; sourceTree = "<group>"; };
-		D9CBE216209160880008F68D /* MobiliarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MobiliarioViewController.swift; path = LaboratorioUrbanoSensorial/MobiliarioViewController.swift; sourceTree = "<group>"; };
-		D9CBE218209160A50008F68D /* MobiliarioImageSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MobiliarioImageSelectionViewController.swift; path = LaboratorioUrbanoSensorial/MobiliarioImageSelectionViewController.swift; sourceTree = "<group>"; };
-		D9CBE21A209160C70008F68D /* MobiliarioColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MobiliarioColorViewController.swift; path = LaboratorioUrbanoSensorial/MobiliarioColorViewController.swift; sourceTree = "<group>"; };
-		D9CBE21C209161540008F68D /* MobiliarioImprovementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MobiliarioImprovementViewController.swift; path = LaboratorioUrbanoSensorial/MobiliarioImprovementViewController.swift; sourceTree = "<group>"; };
+		D9CBE20A2091418F0008F68D /* InterviewSubjectInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewSubjectInfoViewController.swift; sourceTree = "<group>"; };
+		D9CBE20C209149280008F68D /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		D9CBE20E20914FF80008F68D /* CleanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanViewController.swift; sourceTree = "<group>"; };
+		D9CBE21020915FAD0008F68D /* CleanSelectImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanSelectImageViewController.swift; sourceTree = "<group>"; };
+		D9CBE21220915FD00008F68D /* CleanColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanColorViewController.swift; sourceTree = "<group>"; };
+		D9CBE21420915FE80008F68D /* CleanImproveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanImproveViewController.swift; sourceTree = "<group>"; };
+		D9CBE216209160880008F68D /* MobiliarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiliarioViewController.swift; sourceTree = "<group>"; };
+		D9CBE218209160A50008F68D /* MobiliarioImageSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiliarioImageSelectionViewController.swift; sourceTree = "<group>"; };
+		D9CBE21A209160C70008F68D /* MobiliarioColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiliarioColorViewController.swift; sourceTree = "<group>"; };
+		D9CBE21C209161540008F68D /* MobiliarioImprovementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiliarioImprovementViewController.swift; sourceTree = "<group>"; };
+		D9CBE21E2092A74F0008F68D /* NoiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseViewController.swift; sourceTree = "<group>"; };
+		D9CBE2202092A7730008F68D /* NoiseImageSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseImageSelectionViewController.swift; sourceTree = "<group>"; };
+		D9CBE2222092A79C0008F68D /* NoiseColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseColorViewController.swift; sourceTree = "<group>"; };
+		D9CBE2242092A7B10008F68D /* NoiseImprovementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseImprovementViewController.swift; sourceTree = "<group>"; };
+		D9CBE2262092A7C80008F68D /* SecurityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityViewController.swift; sourceTree = "<group>"; };
+		D9CBE2282092A7DB0008F68D /* SecurityImageSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityImageSelectionViewController.swift; sourceTree = "<group>"; };
+		D9CBE22A2092A7F40008F68D /* SecurityColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityColorViewController.swift; sourceTree = "<group>"; };
+		D9CBE22C2092AF8F0008F68D /* SecurityImprovementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityImprovementViewController.swift; sourceTree = "<group>"; };
+		D9CBE22E2092B03A0008F68D /* NatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatureViewController.swift; sourceTree = "<group>"; };
+		D9CBE2302092B04D0008F68D /* NatureImageSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatureImageSelectionViewController.swift; sourceTree = "<group>"; };
+		D9CBE2322092B0620008F68D /* NatureColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatureColorViewController.swift; sourceTree = "<group>"; };
+		D9CBE2342092B0A30008F68D /* NatureImprovementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatureImprovementViewController.swift; sourceTree = "<group>"; };
+		D9CBE2362092B0C70008F68D /* EndInterviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndInterviewViewController.swift; sourceTree = "<group>"; };
 		D9DD3535208A7E3D0006C50B /* LaboratorioUrbanoSensorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaboratorioUrbanoSensorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9DD3538208A7E3D0006C50B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9DD353A208A7E3D0006C50B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -99,16 +125,6 @@
 		D9DD352C208A7E3D0006C50B = {
 			isa = PBXGroup;
 			children = (
-				D9CBE20E20914FF80008F68D /* CleanViewController.swift */,
-				D9CBE21020915FAD0008F68D /* CleanSelectImageViewController.swift */,
-				D9CBE21220915FD00008F68D /* CleanColorViewController.swift */,
-				D9CBE21420915FE80008F68D /* CleanImproveViewController.swift */,
-				D9CBE216209160880008F68D /* MobiliarioViewController.swift */,
-				D9CBE218209160A50008F68D /* MobiliarioImageSelectionViewController.swift */,
-				D9CBE21A209160C70008F68D /* MobiliarioColorViewController.swift */,
-				D9CBE21C209161540008F68D /* MobiliarioImprovementViewController.swift */,
-				D9CBE20C209149280008F68D /* AboutViewController.swift */,
-				D9CBE20A2091418F0008F68D /* InterviewSubjectInfoViewController.swift */,
 				D9DD3537208A7E3D0006C50B /* LaboratorioUrbanoSensorial */,
 				D9DD354C208A7E420006C50B /* LaboratorioUrbanoSensorialTests */,
 				D9DD3557208A7E420006C50B /* LaboratorioUrbanoSensorialUITests */,
@@ -129,6 +145,29 @@
 		D9DD3537208A7E3D0006C50B /* LaboratorioUrbanoSensorial */ = {
 			isa = PBXGroup;
 			children = (
+				D9CBE21E2092A74F0008F68D /* NoiseViewController.swift */,
+				D9CBE2202092A7730008F68D /* NoiseImageSelectionViewController.swift */,
+				D9CBE2222092A79C0008F68D /* NoiseColorViewController.swift */,
+				D9CBE2242092A7B10008F68D /* NoiseImprovementViewController.swift */,
+				D9CBE2262092A7C80008F68D /* SecurityViewController.swift */,
+				D9CBE2282092A7DB0008F68D /* SecurityImageSelectionViewController.swift */,
+				D9CBE22A2092A7F40008F68D /* SecurityColorViewController.swift */,
+				D9CBE22C2092AF8F0008F68D /* SecurityImprovementViewController.swift */,
+				D9CBE22E2092B03A0008F68D /* NatureViewController.swift */,
+				D9CBE2302092B04D0008F68D /* NatureImageSelectionViewController.swift */,
+				D9CBE2322092B0620008F68D /* NatureColorViewController.swift */,
+				D9CBE2342092B0A30008F68D /* NatureImprovementViewController.swift */,
+				D9CBE2362092B0C70008F68D /* EndInterviewViewController.swift */,
+				D9CBE20E20914FF80008F68D /* CleanViewController.swift */,
+				D9CBE21020915FAD0008F68D /* CleanSelectImageViewController.swift */,
+				D9CBE21220915FD00008F68D /* CleanColorViewController.swift */,
+				D9CBE21420915FE80008F68D /* CleanImproveViewController.swift */,
+				D9CBE216209160880008F68D /* MobiliarioViewController.swift */,
+				D9CBE218209160A50008F68D /* MobiliarioImageSelectionViewController.swift */,
+				D9CBE21A209160C70008F68D /* MobiliarioColorViewController.swift */,
+				D9CBE21C209161540008F68D /* MobiliarioImprovementViewController.swift */,
+				D9CBE20C209149280008F68D /* AboutViewController.swift */,
+				D9CBE20A2091418F0008F68D /* InterviewSubjectInfoViewController.swift */,
 				D9DD3538208A7E3D0006C50B /* AppDelegate.swift */,
 				D9DD353A208A7E3D0006C50B /* LoginViewController.swift */,
 				D9DD353C208A7E3D0006C50B /* Main.storyboard */,
@@ -289,19 +328,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9CBE2372092B0C70008F68D /* EndInterviewViewController.swift in Sources */,
 				D9CBE21D209161540008F68D /* MobiliarioImprovementViewController.swift in Sources */,
 				D9DD3567208A7F950006C50B /* InterviewLengthController.swift in Sources */,
 				D9DD353B208A7E3D0006C50B /* LoginViewController.swift in Sources */,
+				D9CBE2292092A7DB0008F68D /* SecurityImageSelectionViewController.swift in Sources */,
 				D9CBE21320915FD00008F68D /* CleanColorViewController.swift in Sources */,
 				D9CBE20F20914FF80008F68D /* CleanViewController.swift in Sources */,
+				D9CBE2232092A79C0008F68D /* NoiseColorViewController.swift in Sources */,
 				D9CBE21120915FAD0008F68D /* CleanSelectImageViewController.swift in Sources */,
+				D9CBE22D2092AF8F0008F68D /* SecurityImprovementViewController.swift in Sources */,
 				D9DD3539208A7E3D0006C50B /* AppDelegate.swift in Sources */,
 				D9CBE20D209149280008F68D /* AboutViewController.swift in Sources */,
 				D9CBE20B2091418F0008F68D /* InterviewSubjectInfoViewController.swift in Sources */,
 				D9CBE219209160A50008F68D /* MobiliarioImageSelectionViewController.swift in Sources */,
+				D9CBE22F2092B03A0008F68D /* NatureViewController.swift in Sources */,
 				D9CBE21520915FE80008F68D /* CleanImproveViewController.swift in Sources */,
+				D9CBE2352092B0A30008F68D /* NatureImprovementViewController.swift in Sources */,
+				D9CBE2332092B0620008F68D /* NatureColorViewController.swift in Sources */,
+				D9CBE2312092B04D0008F68D /* NatureImageSelectionViewController.swift in Sources */,
 				D9CBE217209160880008F68D /* MobiliarioViewController.swift in Sources */,
+				D9CBE22B2092A7F40008F68D /* SecurityColorViewController.swift in Sources */,
+				D9CBE2212092A7730008F68D /* NoiseImageSelectionViewController.swift in Sources */,
+				D9CBE2272092A7C80008F68D /* SecurityViewController.swift in Sources */,
 				D9CBE21B209160C70008F68D /* MobiliarioColorViewController.swift in Sources */,
+				D9CBE21F2092A74F0008F68D /* NoiseViewController.swift in Sources */,
+				D9CBE2252092A7B10008F68D /* NoiseImprovementViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

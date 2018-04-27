@@ -1,15 +1,15 @@
 //
-//  CleanSelectImageViewController.swift
+//  SecurityViewController.swift
 //  LaboratorioUrbanoSensorial
 //
-//  Created by Luis Alfredo León Villapún on 25/04/18.
+//  Created by Luis Alfredo León Villapún on 26/04/18.
 //  Copyright © 2018 Luis Alfredo León Villapún. All rights reserved.
 //
 
 import UIKit
 
-class CleanSelectImageViewController: UIViewController {
-    
+class SecurityViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,12 +31,5 @@ class CleanSelectImageViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        /*let data = "Hola"
-        if let destinationViewController = segue.destinationViewController as? CleanColorViewController {
-            destinationViewController.data = data
-        }*/
-    }
 
 }

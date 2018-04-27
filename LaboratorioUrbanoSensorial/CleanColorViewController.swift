@@ -9,7 +9,9 @@
 import UIKit
 
 class CleanColorViewController: UIViewController {
+    var data: UIImage?
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
