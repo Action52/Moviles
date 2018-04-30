@@ -36,7 +36,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9L5-DV-TDd">
                                 <rect key="frame" x="99.5" y="511.5" width="176" height="44"/>
@@ -46,7 +46,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Iniciar sesión"/>
                                 <connections>
-                                    <segue destination="B6n-nJ-wXA" kind="show" identifier="showInterviewLengthController" id="Vdg-z7-oA0"/>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="24U-4Y-G3U"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -61,6 +61,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="password" destination="f34-nC-fz4" id="155-cK-aTz"/>
+                        <outlet property="username" destination="0bJ-Vk-BHV" id="WdP-fa-usP"/>
+                        <segue destination="B6n-nJ-wXA" kind="presentation" identifier="segue" id="nrY-5X-H80"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8BF514342097DB55001BCD60 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF514332097DB55001BCD60 /* User.swift */; };
 		D9CBE20B2091418F0008F68D /* InterviewSubjectInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBE20A2091418F0008F68D /* InterviewSubjectInfoViewController.swift */; };
 		D9CBE20D209149280008F68D /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBE20C209149280008F68D /* AboutViewController.swift */; };
 		D9CBE20F20914FF80008F68D /* CleanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBE20E20914FF80008F68D /* CleanViewController.swift */; };
@@ -58,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8BF514332097DB55001BCD60 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D9CBE20A2091418F0008F68D /* InterviewSubjectInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewSubjectInfoViewController.swift; sourceTree = "<group>"; };
 		D9CBE20C209149280008F68D /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		D9CBE20E20914FF80008F68D /* CleanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				D9DD353F208A7E420006C50B /* Assets.xcassets */,
 				D9DD3541208A7E420006C50B /* LaunchScreen.storyboard */,
 				D9DD3544208A7E420006C50B /* Info.plist */,
+				8BF514332097DB55001BCD60 /* User.swift */,
 			);
 			path = LaboratorioUrbanoSensorial;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				D9DD3567208A7F950006C50B /* InterviewLengthController.swift in Sources */,
 				D9DD353B208A7E3D0006C50B /* LoginViewController.swift in Sources */,
 				D9CBE2292092A7DB0008F68D /* SecurityImageSelectionViewController.swift in Sources */,
+				8BF514342097DB55001BCD60 /* User.swift in Sources */,
 				D9CBE21320915FD00008F68D /* CleanColorViewController.swift in Sources */,
 				D9CBE20F20914FF80008F68D /* CleanViewController.swift in Sources */,
 				D9CBE2232092A79C0008F68D /* NoiseColorViewController.swift in Sources */,
