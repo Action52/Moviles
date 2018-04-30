@@ -38,5 +38,7 @@ class CleanSelectImageViewController: UIViewController {
             destinationViewController.data = data
         }*/
     }
+    
+    
 
 }
