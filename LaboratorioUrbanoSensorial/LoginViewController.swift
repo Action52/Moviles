@@ -26,10 +26,11 @@ class ViewController: UIViewController {
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         let usernameStr = username.text!.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
         let passwordStr = password.text!.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
-    //validation GET
+        
+        //validation GET
         let url = URL(string: "https://laboratorio-db.herokuapp.com/users?username=" + usernameStr! )
         let session = URLSession.shared
-        let task = session.dataTask(with: url!) { //request para post
+        let task = session.dataTask(with: url!) {
             (dataN, _, _) in DispatchQueue.main.async{
                 UIApplication.shared.isNetworkActivityIndicatorVisible = false
             }
@@ -43,6 +44,8 @@ class ViewController: UIViewController {
                         }
                     }
                     else{
+                        
+                        
                         //PUT USER
                         let aumentar = (user.numEntrevistas+1)
                         let userNam = user.username
@@ -57,18 +60,8 @@ class ViewController: UIViewController {
                             let jsonHead = try JSONSerialization.data(withJSONObject: postDictionary, options: [])
                             requestGet.httpBody = jsonHead
                         }catch{}
-                        let sessionGet = URLSession.shared
-                        let taskGet = sessionGet.dataTask(with: requestGet) {
-                            (data, _, _) in DispatchQueue.main.async{
-                                UIApplication.shared.isNetworkActivityIndicatorVisible = false
-                            }
-                            guard let data = data else { return }
-                            do{
-                                let json = try JSONSerialization.jsonObject(with: data, options: [])
-                            }catch{}
-                        }
-                        taskGet.resume()
-                        //GET USER UPDATED
+                        
+                        //UPDATED
                         let urlAct = URL(string: "https://laboratorio-db.herokuapp.com/users?username=" + usernameStr! )
                         let sessionAct = URLSession.shared
                         let taskAct = sessionAct.dataTask(with: urlAct!) {
@@ -78,13 +71,16 @@ class ViewController: UIViewController {
                             guard let dataG = dataG else { return }
                             do{
                                 let actors = try JSONDecoder().decode([User].self, from: dataG)
-                        for act in actors{
+                                for act in actors{
+                            
                                     
                         //POST
                         let entrevistador = act.nombre
                         let num = act.numEntrevistas
                          DispatchQueue.main.async {
+                            DispatchQueue.main.async {
                             self.changeValue(entrevistador: entrevistador, num: num)
+                            }
                         }
                         let urlPost = URL(string: "https://laboratorio-db.herokuapp.com/interviewed")
                         var request = URLRequest(url: urlPost!)
@@ -95,19 +91,9 @@ class ViewController: UIViewController {
                             let jsonBody = try JSONEncoder().encode(newPost)
                             request.httpBody = jsonBody
                         } catch{}
-                        let sessionPost = URLSession.shared
-                        let taskPost = sessionPost.dataTask(with: request) {
-                            (data, _, _) in DispatchQueue.main.async{
-                                UIApplication.shared.isNetworkActivityIndicatorVisible = false
-                            }
-                            guard let data = data else { return }
-                            do{
-                                let json = try JSONSerialization.jsonObject(with: data, options: [])
-                            }catch{}
-                        }
-                        taskPost.resume()
                         //FIN DEL POST
-                        
+                            
+                            
                                 }
                             }catch{}
                         }
@@ -116,6 +102,7 @@ class ViewController: UIViewController {
                         DispatchQueue.main.async{
                             self.changeView()
                         }
+                        
                         
                     } // Fin else
                 } // Fin users
