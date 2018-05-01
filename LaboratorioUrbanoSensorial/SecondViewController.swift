@@ -9,11 +9,12 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    
+    var interviewed: String?
+    var numEnt: Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,7 +22,6 @@ class SecondViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     /*
     // MARK: - Navigation
@@ -33,4 +33,10 @@ class SecondViewController: UIViewController {
     }
     */
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        let DestViewController = segue.destination as! InterviewSubjectInfoViewController
+        DestViewController.inter = interviewed
+        DestViewController.numEnt = numEnt
+    }
+    
 }

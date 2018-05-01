@@ -71,17 +71,17 @@
                     <connections>
                         <outlet property="password" destination="f34-nC-fz4" id="155-cK-aTz"/>
                         <outlet property="username" destination="0bJ-Vk-BHV" id="WdP-fa-usP"/>
-                        <segue destination="B6n-nJ-wXA" kind="presentation" identifier="segue" id="nrY-5X-H80"/>
+                        <segue destination="B6n-nJ-wXA" kind="presentation" identifier="segue" id="erl-ZD-WVc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-158" y="-26"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="c4S-Fp-Jln">
             <objects>
-                <viewController id="B6n-nJ-wXA" sceneMemberID="viewController">
+                <viewController id="B6n-nJ-wXA" customClass="SecondViewController" customModule="LaboratorioUrbanoSensorial" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZfY-58-1rs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -121,7 +121,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Acepto"/>
                                 <connections>
-                                    <segue destination="Ywb-tN-4r8" kind="show" identifier="showInterviewedInfoController" id="pti-1l-Yoj"/>
+                                    <segue destination="Ywb-tN-4r8" kind="show" identifier="showInterview" id="l9J-a1-1T6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHb-i8-35U">
@@ -156,11 +156,11 @@
             </objects>
             <point key="canvasLocation" x="752.79999999999995" y="-27.436281859070466"/>
         </scene>
-        <!--View Controller-->
+        <!--Interview Subject Info View Controller-->
         <scene sceneID="cTD-YR-pLL">
             <objects>
-                <viewController id="Ywb-tN-4r8" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cFD-Fg-ekA">
+                <viewController id="Ywb-tN-4r8" customClass="InterviewSubjectInfoViewController" customModule="LaboratorioUrbanoSensorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cFD-Fg-ekA" customClass="Int">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -199,6 +199,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Continuar"/>
                                 <connections>
+                                    <action selector="info:" destination="Ywb-tN-4r8" eventType="touchUpInside" id="mSa-R7-iMa"/>
                                     <segue destination="pTF-vd-D4J" kind="show" identifier="showVideoController" id="nJe-dc-qeN"/>
                                 </connections>
                             </button>
@@ -211,7 +212,9 @@
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NGd-ha-SXc">
                                 <rect key="frame" x="25.5" y="125.5" width="324" height="216"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="NGd-ha-SXc" secondAttribute="height" multiplier="3:2" id="FVp-dZ-zRf"/>
                                     <constraint firstAttribute="width" secondItem="NGd-ha-SXc" secondAttribute="height" multiplier="3:2" id="lZs-uZ-70g"/>
+                                    <constraint firstAttribute="width" secondItem="NGd-ha-SXc" secondAttribute="height" multiplier="3:2" id="oKa-V5-7qY"/>
                                 </constraints>
                             </pickerView>
                         </subviews>
@@ -232,6 +235,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wmV-Uz-FiQ"/>
                     </view>
+                    <connections>
+                        <outlet property="localidad" destination="Glw-CC-goj" id="egx-th-Gxt"/>
+                        <outlet property="ocupacion" destination="SEF-1B-aYf" id="XPK-TT-elP"/>
+                        <outlet property="pickerViewAge" destination="NGd-ha-SXc" id="Vlf-Hq-vJg"/>
+                        <outlet property="pickerViewGender" destination="8f6-y8-iFU" id="F40-zc-TQo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="36g-8L-eL5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1229,7 +1238,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TAZ-SL-ldD">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TAZ-SL-ldD">
                                 <rect key="frame" x="67" y="111" width="240" height="128"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terminó la encuesta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1u8-A8-xgS">
@@ -1254,7 +1263,7 @@
                             <constraint firstItem="sXH-a9-ca6" firstAttribute="centerY" secondItem="eYD-Rg-1cA" secondAttribute="centerY" multiplier="1.2" id="Jup-Vi-Dbw"/>
                             <constraint firstItem="1u8-A8-xgS" firstAttribute="centerY" secondItem="eYD-Rg-1cA" secondAttribute="centerY" id="TyM-ct-to7"/>
                             <constraint firstItem="sXH-a9-ca6" firstAttribute="centerX" secondItem="eYD-Rg-1cA" secondAttribute="centerX" id="ftF-O0-emD"/>
-                            <constraint firstItem="1u8-A8-xgS" firstAttribute="top" secondItem="TAZ-SL-ldD" secondAttribute="bottom" constant="74" id="hu3-Fl-y2N"/>
+                            <constraint firstItem="1u8-A8-xgS" firstAttribute="top" secondItem="TAZ-SL-ldD" secondAttribute="bottom" constant="73" id="hu3-Fl-y2N"/>
                             <constraint firstItem="sXH-a9-ca6" firstAttribute="width" secondItem="sXH-a9-ca6" secondAttribute="height" multiplier="8:1" id="joW-uz-Hpn"/>
                             <constraint firstItem="1u8-A8-xgS" firstAttribute="centerX" secondItem="eYD-Rg-1cA" secondAttribute="centerX" id="kT9-Lp-t2o"/>
                             <constraint firstItem="TAZ-SL-ldD" firstAttribute="centerX" secondItem="eYD-Rg-1cA" secondAttribute="centerX" id="vg3-BK-5Zw"/>
@@ -2102,8 +2111,8 @@
         <segue reference="DCn-t2-zlw"/>
         <segue reference="V5p-rc-SgJ"/>
         <segue reference="TaB-wG-BSH"/>
-        <segue reference="I7V-xo-PdC"/>
-        <segue reference="3XG-35-nNU"/>
-        <segue reference="pti-1l-Yoj"/>
+        <segue reference="guf-dI-c5U"/>
+        <segue reference="nJe-dc-qeN"/>
+        <segue reference="l9J-a1-1T6"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B781476209822DB0046EA94 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B781475209822DB0046EA94 /* Post.swift */; };
+		8B7814782098FEA40046EA94 /* PostNo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7814772098FEA40046EA94 /* PostNo.swift */; };
 		8BF514342097DB55001BCD60 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF514332097DB55001BCD60 /* User.swift */; };
 		D9CBE20B2091418F0008F68D /* InterviewSubjectInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBE20A2091418F0008F68D /* InterviewSubjectInfoViewController.swift */; };
 		D9CBE20D209149280008F68D /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CBE20C209149280008F68D /* AboutViewController.swift */; };
@@ -38,7 +40,7 @@
 		D9DD3543208A7E420006C50B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9DD3541208A7E420006C50B /* LaunchScreen.storyboard */; };
 		D9DD354E208A7E420006C50B /* LaboratorioUrbanoSensorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD354D208A7E420006C50B /* LaboratorioUrbanoSensorialTests.swift */; };
 		D9DD3559208A7E420006C50B /* LaboratorioUrbanoSensorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD3558208A7E420006C50B /* LaboratorioUrbanoSensorialUITests.swift */; };
-		D9DD3567208A7F950006C50B /* InterviewLengthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD3566208A7F950006C50B /* InterviewLengthController.swift */; };
+		D9DD3567208A7F950006C50B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DD3566208A7F950006C50B /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B781475209822DB0046EA94 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		8B7814772098FEA40046EA94 /* PostNo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostNo.swift; sourceTree = "<group>"; };
 		8BF514332097DB55001BCD60 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D9CBE20A2091418F0008F68D /* InterviewSubjectInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewSubjectInfoViewController.swift; sourceTree = "<group>"; };
 		D9CBE20C209149280008F68D /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
@@ -96,7 +100,7 @@
 		D9DD3554208A7E420006C50B /* LaboratorioUrbanoSensorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaboratorioUrbanoSensorialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9DD3558208A7E420006C50B /* LaboratorioUrbanoSensorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaboratorioUrbanoSensorialUITests.swift; sourceTree = "<group>"; };
 		D9DD355A208A7E420006C50B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D9DD3566208A7F950006C50B /* InterviewLengthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewLengthController.swift; sourceTree = "<group>"; };
+		D9DD3566208A7F950006C50B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,11 +177,13 @@
 				D9DD3538208A7E3D0006C50B /* AppDelegate.swift */,
 				D9DD353A208A7E3D0006C50B /* LoginViewController.swift */,
 				D9DD353C208A7E3D0006C50B /* Main.storyboard */,
-				D9DD3566208A7F950006C50B /* InterviewLengthController.swift */,
+				D9DD3566208A7F950006C50B /* SecondViewController.swift */,
 				D9DD353F208A7E420006C50B /* Assets.xcassets */,
 				D9DD3541208A7E420006C50B /* LaunchScreen.storyboard */,
 				D9DD3544208A7E420006C50B /* Info.plist */,
 				8BF514332097DB55001BCD60 /* User.swift */,
+				8B781475209822DB0046EA94 /* Post.swift */,
+				8B7814772098FEA40046EA94 /* PostNo.swift */,
 			);
 			path = LaboratorioUrbanoSensorial;
 			sourceTree = "<group>";
@@ -333,7 +339,7 @@
 			files = (
 				D9CBE2372092B0C70008F68D /* EndInterviewViewController.swift in Sources */,
 				D9CBE21D209161540008F68D /* MobiliarioImprovementViewController.swift in Sources */,
-				D9DD3567208A7F950006C50B /* InterviewLengthController.swift in Sources */,
+				D9DD3567208A7F950006C50B /* SecondViewController.swift in Sources */,
 				D9DD353B208A7E3D0006C50B /* LoginViewController.swift in Sources */,
 				D9CBE2292092A7DB0008F68D /* SecurityImageSelectionViewController.swift in Sources */,
 				8BF514342097DB55001BCD60 /* User.swift in Sources */,
@@ -350,8 +356,10 @@
 				D9CBE21520915FE80008F68D /* CleanImproveViewController.swift in Sources */,
 				D9CBE2352092B0A30008F68D /* NatureImprovementViewController.swift in Sources */,
 				D9CBE2332092B0620008F68D /* NatureColorViewController.swift in Sources */,
+				8B7814782098FEA40046EA94 /* PostNo.swift in Sources */,
 				D9CBE2312092B04D0008F68D /* NatureImageSelectionViewController.swift in Sources */,
 				D9CBE217209160880008F68D /* MobiliarioViewController.swift in Sources */,
+				8B781476209822DB0046EA94 /* Post.swift in Sources */,
 				D9CBE22B2092A7F40008F68D /* SecurityColorViewController.swift in Sources */,
 				D9CBE2212092A7730008F68D /* NoiseImageSelectionViewController.swift in Sources */,
 				D9CBE2272092A7C80008F68D /* SecurityViewController.swift in Sources */,

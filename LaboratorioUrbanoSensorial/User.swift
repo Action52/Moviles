@@ -8,9 +8,10 @@
 
 import Foundation
 
-struct User: Decodable {
+struct User: Decodable, Encodable{
     let username: String
     let password: String
     let nombre: String
     let id: Int
+    let numEntrevistas: Int
 }

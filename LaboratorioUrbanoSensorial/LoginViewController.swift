@@ -12,6 +12,9 @@ class ViewController: UIViewController {
 
     let defaultSession = URLSession(configuration: .default)
     var dataTask : URLSessionDataTask?
+    
+    var inter: String?
+    var numInter: Int?
 
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
@@ -23,45 +26,107 @@ class ViewController: UIViewController {
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         let usernameStr = username.text!.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
         let passwordStr = password.text!.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+    //validation GET
         let url = URL(string: "https://laboratorio-db.herokuapp.com/users?username=" + usernameStr! )
-        
-        /*let url = NSURL(string: + usernameStr! + "&password=" + passwordStr!)*/
-        /*var request = URLRequest(url: url!)
-         //request.httpMethod = "GET"
-         //request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-         //let postDictionary = ["username": "mike3Run",
-         "password": "passwordStr",
-         "nombre": "Miguel Palau"]
-         
-         do{
-         let jsonBody = try JSONSerialization.data(withJSONObject: postDictionary, options: [])
-         request.httpBody = jsonBody
-         } catch{}*/
-        
         let session = URLSession.shared
         let task = session.dataTask(with: url!) { //request para post
-            (data, _, _) in DispatchQueue.main.async{
+            (dataN, _, _) in DispatchQueue.main.async{
                 UIApplication.shared.isNetworkActivityIndicatorVisible = false
             }
-            guard let data = data else { return }
+            guard let dataN = dataN else { return }
             do{
-                let users = try JSONDecoder().decode([User].self, from: data)
+                let users = try JSONDecoder().decode([User].self, from: dataN)
                 for user in users{
-                    //print(user.password)
                     if(user.password != passwordStr){
                         DispatchQueue.main.async{
                             self.showResult()
                         }
                     }
                     else{
+                        //PUT USER
+                        let aumentar = (user.numEntrevistas+1)
+                        let userNam = user.username
+                        let userNom = user.nombre
+                        let pass = user.password
+                        let urlGet = URL(string: "https://laboratorio-db.herokuapp.com/users/" + String(user.id))
+                        var requestGet = URLRequest(url: urlGet!)
+                        requestGet.httpMethod = "PUT"
+                        requestGet.addValue("application/json", forHTTPHeaderField: "Content-Type")
+                        let postDictionary = ["numEntrevistas": aumentar, "username": userNam, "password": pass, "nombre": userNom] as [String : Any]
+                        do{
+                            let jsonHead = try JSONSerialization.data(withJSONObject: postDictionary, options: [])
+                            requestGet.httpBody = jsonHead
+                        }catch{}
+                        let sessionGet = URLSession.shared
+                        let taskGet = sessionGet.dataTask(with: requestGet) {
+                            (data, _, _) in DispatchQueue.main.async{
+                                UIApplication.shared.isNetworkActivityIndicatorVisible = false
+                            }
+                            guard let data = data else { return }
+                            do{
+                                let json = try JSONSerialization.jsonObject(with: data, options: [])
+                            }catch{}
+                        }
+                        taskGet.resume()
+                        //GET USER UPDATED
+                        let urlAct = URL(string: "https://laboratorio-db.herokuapp.com/users?username=" + usernameStr! )
+                        let sessionAct = URLSession.shared
+                        let taskAct = sessionAct.dataTask(with: urlAct!) {
+                            (dataG, _, _) in DispatchQueue.main.async{
+                                UIApplication.shared.isNetworkActivityIndicatorVisible = false
+                            }
+                            guard let dataG = dataG else { return }
+                            do{
+                                let actors = try JSONDecoder().decode([User].self, from: dataG)
+                        for act in actors{
+                                    
+                        //POST
+                        let entrevistador = act.nombre
+                        let num = act.numEntrevistas
+                         DispatchQueue.main.async {
+                            self.changeValue(entrevistador: entrevistador, num: num)
+                        }
+                        let urlPost = URL(string: "https://laboratorio-db.herokuapp.com/interviewed")
+                        var request = URLRequest(url: urlPost!)
+                        request.httpMethod = "POST"
+                        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+                        let newPost = PostNo(Entrevistador: entrevistador, numEntrevistas: act.numEntrevistas, LocalidadEntrevistado: "", OcupacionEntrevistado: "", GeneroEntrevistado: "", RangoEdadEntrevistado: "", LimpiezaCalificacion: 0, LimpiezaImagen: 0, LimpiezaColor: 0, LimpiezaMejoramiento: "", MobiliarioCalificacion: 0, MobiliarioImagen: 0, MobiliarioColor: 0, MobiliarioMejoramiento: "", RuidoCalificacion: 0, RuidoImagen: 0, RuidoColor: 0, RuidoMejoramiento: "", SeguridadCalificacion: 0, SeguridadImagen: 0, SeguridadColor: 0, SeguridadMejoramiento: "", NaturalezaCalificacion: 0, NaturalezaImagen: 0, NaturalezaColor: 0, NaturalezaMejoramiento: "")
+                        do{
+                            let jsonBody = try JSONEncoder().encode(newPost)
+                            request.httpBody = jsonBody
+                        } catch{}
+                        let sessionPost = URLSession.shared
+                        let taskPost = sessionPost.dataTask(with: request) {
+                            (data, _, _) in DispatchQueue.main.async{
+                                UIApplication.shared.isNetworkActivityIndicatorVisible = false
+                            }
+                            guard let data = data else { return }
+                            do{
+                                let json = try JSONSerialization.jsonObject(with: data, options: [])
+                            }catch{}
+                        }
+                        taskPost.resume()
+                        //FIN DEL POST
+                        
+                                }
+                            }catch{}
+                        }
+                        taskAct.resume()
+                        //CAMBIO DE VIEWCONTROLLER
                         DispatchQueue.main.async{
                             self.changeView()
                         }
-                    }
-                }
-            }catch{}
-        }
+                        
+                    } // Fin else
+                } // Fin users
+            }catch{} //Fin fo
+        } // Fin Task
         task.resume()
+    }
+    
+    func changeValue(entrevistador: String, num: Int) {
+        self.inter = entrevistador
+        self.numInter = num
     }
     
     func showResult(){
@@ -87,10 +152,10 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        //if segue.identifier == "showInterviewLengthController"{
-        //}
+        let DestViewController = segue.destination as! SecondViewController
+        DestViewController.interviewed = "LuisFlores"
+        DestViewController.numEnt = 2
     }
-
-
+    
 }
 
