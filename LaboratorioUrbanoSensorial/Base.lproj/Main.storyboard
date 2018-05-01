@@ -49,14 +49,21 @@
                                     <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="24U-4Y-G3U"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="vkL-yB-HPb">
+                                <rect key="frame" x="37.5" y="176" width="300" height="133.5"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="vkL-yB-HPb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="156" id="5Am-NH-QyS"/>
                             <constraint firstItem="9L5-DV-TDd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.6" id="QQP-EA-vTM"/>
                             <constraint firstItem="9L5-DV-TDd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SC0-Vd-Osj"/>
                             <constraint firstItem="0bJ-Vk-BHV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vp2-xA-ndH"/>
                             <constraint firstItem="0bJ-Vk-BHV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.2" id="a8I-QV-OUz"/>
+                            <constraint firstItem="vkL-yB-HPb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="b6h-2C-A7E"/>
                             <constraint firstItem="f34-nC-fz4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.4" id="dQp-Ie-6Q6"/>
+                            <constraint firstItem="vkL-yB-HPb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="e8Z-XG-yXX"/>
+                            <constraint firstItem="vkL-yB-HPb" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="ve9-9y-Jpu"/>
                             <constraint firstItem="f34-nC-fz4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vuk-Ei-Tyz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -2083,6 +2090,7 @@
         <image name="PurpleColor" width="50" height="50"/>
         <image name="TestImage" width="128" height="142"/>
         <image name="YellowColor" width="50" height="50"/>
+        <image name="logo" width="250" height="127"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ccE-lx-h45"/>
