@@ -70,11 +70,27 @@ class InterviewSubjectInfoViewController: UIViewController, UIPickerViewDelegate
             guard let data = data else { return }
             do{
                 let json = try JSONSerialization.jsonObject(with: data, options: [])
-                print(json)
             }catch{}
         }
         taskGet.resume()
         //FIN PUT
+        //DELETE
+        let urlDel = URL(string: "https://laboratorio-db.herokuapp.com/interviewed/" + String(act.id+1))
+        var requestDel = URLRequest(url: urlDel!)
+        requestDel.httpMethod = "DELETE"
+        requestDel.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        let sessionDel = URLSession.shared
+        let taskDel = sessionDel.dataTask(with: requestDel) {
+        (data, _, _) in DispatchQueue.main.async{
+            UIApplication.shared.isNetworkActivityIndicatorVisible = false
+        }
+        guard let data = data else { return }
+        do{
+            let json = try JSONSerialization.jsonObject(with: data, options: [])
+        }catch{}
+        }
+        taskDel.resume()
+        //FIN DELETE
                 }
             }catch{}
         }
@@ -87,7 +103,6 @@ class InterviewSubjectInfoViewController: UIViewController, UIPickerViewDelegate
         pickerViewAge.dataSource = self
         pickerViewGender.delegate = self
         pickerViewGender.dataSource = self
-        
     }
 
     override func didReceiveMemoryWarning() {
