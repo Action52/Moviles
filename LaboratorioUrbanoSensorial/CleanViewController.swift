@@ -8,11 +8,32 @@
 
 import UIKit
 
-class CleanViewController: UIViewController {
+class CleanViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
+    
+    
+
+    @IBOutlet weak var picker: UIPickerView!
+    var pickerData:[String] = [String]()
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerData[row]
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.picker.delegate = self
+        self.picker.dataSource = self
+        
+        pickerData = ["1", "2", "3", "4", "5"]
         // Do any additional setup after loading the view.
     }
 
