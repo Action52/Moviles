@@ -87,7 +87,8 @@ class InterviewSubjectInfoViewController: UIViewController, UIPickerViewDelegate
         pickerViewAge.dataSource = self
         pickerViewGender.delegate = self
         pickerViewGender.dataSource = self
-        
+        print(inter)
+        print(numEnt)
     }
 
     override func didReceiveMemoryWarning() {
