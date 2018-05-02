@@ -85,6 +85,11 @@ class ViewController: UIViewController {
                                     
                         self.changeValue(entrevistador: entrevistador, num: num)
                         
+                        if (self.inter == nil) {
+                        return
+                        }
+                        else{
+                        DispatchQueue.main.async {
                         let urlPost = URL(string: "https://laboratorio-db.herokuapp.com/interviewed")
                         var request = URLRequest(url: urlPost!)
                         request.httpMethod = "POST"
@@ -106,7 +111,8 @@ class ViewController: UIViewController {
                         }
                         taskTwo.resume()
                         //FIN DEL POST
-                            
+                        }
+                        }
                                 }
                             }catch{}
                         }
@@ -158,9 +164,10 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        let reductor = numInter!
         let DestViewController = segue.destination as! SecondViewController
         DestViewController.interviewed = inter
-        DestViewController.numEnt = numInter
+        DestViewController.numEnt = reductor
     }
     
 }

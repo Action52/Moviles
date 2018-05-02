@@ -15,8 +15,6 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(interviewed)
-        print(numEnt)
     }
 
     override func didReceiveMemoryWarning() {
